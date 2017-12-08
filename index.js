@@ -12,12 +12,14 @@ function deepestChild(){
 }
 
 function increaseRankBy(n){
-
-   const lis = document.getElementById('app').querySelectorAll('ul.ranked-list li')
-
+   console.log = (`Begin function`);
+   const lis = document.getElementById('app').querySelectorAll('ul.ranked-list li');
+   console.log = (`Got list`);
    for (let i = 0; i < lis.length; i++) {
-     lis[i].innerHTML = (i + n).toString()
-     console.log = `${(i + n).toString()}`;
+      console.log = (`Begin loop`);
+      console.log(`${lis[i].innerHTML}   ${(i + n).toString()} `);
+     lis[i].innerHTML = (i + n).toString();
+     console.log = (`${(i + n).toString()}`);
    }
 
 }
